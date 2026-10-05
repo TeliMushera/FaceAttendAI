@@ -1,0 +1,9 @@
+streamlit
+pandas
+Pillow
+numpy
+av
+streamlit-webrtc
+deepface
+tf-keras
+opencv-contrib-python==4.11.0.86
