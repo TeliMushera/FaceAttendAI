@@ -16,38 +16,20 @@ The main idea is simple:
 ## Main Logic / Workflow
 <img width="600" alt="FaceAttend AI Workflow Infographic" src="https://github.com/user-attachments/assets/2dbf965c-6ff3-4b9d-b3ed-18d00a3ae3c2" />
 
+## Technologies Used
 
-## Tools Used and Their Meaning
-
-### Python
-Main programming language for the entire project.
-
-### Streamlit
-Creates the web application interface where the user can register students and start attendance.
-
-### OpenCV
-Used for face detection in webcam frames.
-
-### DeepFace
-Provides face recognition features and helps convert face photos into embeddings.
-
-### FaceNet512
-The face model used to create unique face representations for comparison.
-
-### SQLite
-Local database used to store student records and attendance information.
-
-### Pandas
-Used for handling and displaying tabular data such as attendance and student lists.
-
-### NumPy
-Used for numerical calculations and embedding comparison.
-
-### Pillow
-Used for processing uploaded images.
-
-### streamlit-webrtc
-Used to access the webcam in the browser and stream live video into the app.
+| Technology | Purpose |
+|---|---|
+| **Python** | Main programming language used for the entire project |
+| **Streamlit** | Creates the web application interface for student registration and attendance |
+| **OpenCV** | Detects faces in uploaded images and webcam frames |
+| **DeepFace** | Provides face recognition functionality and generates face embeddings |
+| **FaceNet512** | Creates numerical face representations for comparing faces |
+| **SQLite** | Stores student records and attendance information locally |
+| **Pandas** | Handles and displays tabular data such as student and attendance records |
+| **NumPy** | Performs numerical calculations and embedding comparison |
+| **Pillow** | Processes uploaded student images |
+| **streamlit-webrtc** | Connects the browser webcam to the application for live video streaming |
 
 ## How to Download the Project
 
