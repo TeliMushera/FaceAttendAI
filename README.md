@@ -14,52 +14,8 @@ The main idea is simple:
 - mark attendance when the match is correct
 
 ## Main Logic / Workflow
+<img width="600" alt="FaceAttend AI Workflow Infographic" src="https://github.com/user-attachments/assets/2dbf965c-6ff3-4b9d-b3ed-18d00a3ae3c2" />
 
-```text
-+----------------------------------------------------+
-|                    FaceAttend AI                   |
-|             Workflow & Main Logic                  |
-+----------------------------------------------------+
-
-1. Register Student
-   ├── Student Details
-   │   • Student ID
-   │   • Name
-   │   • Department
-   │   • Email
-   ├── Photo Upload
-   │   • image is saved in student_photos/
-   └── Stored in SQLite database
-
-   ↓
-
-   OpenCV detects face
-   ↓
-   FaceNet512 creates embedding
-   ↓
-   Registered embedding stored in memory/database
-
-2. Live Attendance (Webcam)
-   ├── Webcam Frame
-   │   • streamlit-webrtc
-   ├── Detect Face
-   │   • OpenCV Haar Cascade
-   ├── FaceNet512
-   │   • creates live embedding
-   ├── Compare Embeddings
-   │   • cosine distance
-   ├── Find Smallest Distance
-   │   • best match
-   ├── Check threshold
-   │   • if distance is < 0.30
-   ├── Verify multiple matches
-   │   • required matches = 5
-   └── Mark Attendance
-       • student_id + date + time + Present
-
-3. Attendance Storage
-   └── Save record in attendance.db
-```
 
 ## Tools Used and Their Meaning
 
